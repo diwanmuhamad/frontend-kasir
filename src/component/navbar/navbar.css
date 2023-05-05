@@ -1,0 +1,96 @@
+.navbar {
+    width: 100%;
+    height: 110px;
+    z-index: 1;
+}
+
+.firstNav {
+    width: 100%;
+    background-color: #00acee;
+    height: 55px;
+}
+
+.contentFirstCont {
+    width: 85%;
+    margin: auto
+}
+
+.secondNav {
+    width: 100%;
+    background-color: white;
+    height: 55px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    /* padding-left: 72px; */
+}
+
+.navFirstLogoDesc {
+    display: flex;
+    gap: 20px;
+    padding-top: 3px;
+}
+
+.navFirstLogoDesc > img {
+    height: 50px;
+}
+
+.navFirstLogoDesc > h2 {
+    font-size: 24px;
+    color: white;
+    margin-top: 8px;
+}
+
+.navSecondLogoDesc {
+    display: flex;
+    gap: 68px;
+    cursor: pointer;
+    margin-left: 72px;
+}
+
+.navSecondLogoDesc > h3 {
+    margin-top: 15px;
+}
+
+.active {
+    color: #00acee;
+    margin-top: 15px;
+}
+
+.borderAct {
+    border-bottom: 3px solid #00acee;
+    height: 55px;
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    margin-left: -35px;
+}
+
+.borderNotAct {
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    margin-left: -35px;
+}
+
+.borderNotActFood {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: -25px;
+}
+
+.borderNotActFood > h3 {
+    margin-top: 15px;
+}
+
+.borderNotAct > h3 {
+    margin-top: 15px;
+}
+
+.borderActFood {
+    border-bottom: 3px solid #00acee;
+    height: 55px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: -25px;
+}

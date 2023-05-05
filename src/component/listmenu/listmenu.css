@@ -1,0 +1,161 @@
+.mainContList {
+    width: 100%;
+    background-color: #f8f8f8;
+    height: 100vh;
+}
+
+.secondContList {
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+}
+
+.secondContList > h4 {
+    color: #bbbbbb;
+    font-weight: 100;
+}
+
+.cardFoodCont {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1)
+}
+
+.btnAddFoodCon > button {
+    color: white;
+    background-color: #00acee;
+    border: none;
+    cursor: pointer;
+    padding: 7px 14px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2)
+}
+
+table {
+    width: 100%;
+    margin-top: 40px;
+    border-collapse: collapse;
+}
+
+
+#titleTable > th {
+    color: #666666;
+}
+
+td, th {
+    padding: 12px;
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+#titleTable {
+    background-color: #f0f0f0;
+}
+
+
+.cardFoodCont > h4 {
+    color: #00acee;
+}
+
+.inputCon {
+    width: 100%;
+    margin-top: 30px;
+}
+
+#namaInput {
+    width: 99.6%;
+    height: 30px;
+    border: 2px solid #e8e8e8;
+    border-radius: 3px; 
+    padding-left: 10px;
+}
+
+.inputCon > p {
+    font-size: 15px;
+}
+
+.btnSimpanCon {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.hargaInputCon {
+    width: 100%;
+    display: flex;
+   
+}
+
+.hargaInputCon > div {
+    width: 50px;
+    height: 36px;
+    background-color: #00acee;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hargaInputCon > input {
+    width: 100%;
+    height: 30px;
+    border: 2px solid #e8e8e8;
+    border-radius: 3px; 
+    padding-left: 10px;
+}
+
+.btnSimpanCon > button {
+    color: white;
+    background-color: #7cb083;
+    height: 40px;
+    width: 180px;
+    border: none;
+    cursor: pointer;
+    padding: 7px 14px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2)
+}
+
+.divUpload {
+    width: 100%;
+    height: 180px;
+    background-color:#f2f2f2;
+    border: 2px solid #e8e8e8;
+    display: flex;
+    align-items: center;
+}
+
+.centerCon {
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.centerCon > p {
+    font-size: 12px;
+    color: #c6c6c6;
+}
+
+.divActDrag {
+    width: 100%;
+    height: 180px;
+    background-color:#eee9e9;
+    border: 2px solid #e8e8e8;
+    display: flex;
+    align-items: center;
+}
+
+.successNameUpload {
+    color: green;
+    font-size: 12px;
+}
