@@ -3,7 +3,8 @@ import './App.css'
 import ax from './utlis/axios'
 import axios from 'axios'
 import { Navbar, Transaksi, ListMenu } from './component'
-
+import { ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   const [page, setPage] = useState("transaksi")
   return (
@@ -15,6 +16,7 @@ function App() {
         :
         <ListMenu/>
       }
+      <ToastContainer/>
     </div>
   )
 }

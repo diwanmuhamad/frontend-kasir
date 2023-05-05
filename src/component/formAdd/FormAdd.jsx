@@ -2,6 +2,8 @@ import '../listmenu/listmenu.css'
 import {useState, useRef} from 'react'
 import axios from 'axios';
 import logoupload from '../../assets/logoupload.png'
+import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 const FormAdd = ({setIsAdd}) => {
     const [dragActive, setDragActive] = useState(false)
@@ -75,8 +77,19 @@ const FormAdd = ({setIsAdd}) => {
             headers: {
                 Accept: 'application/json',
               },
-        }).then((res) => console.log(res))
-        .catch((err)=> console.log(err))
+        }).then((res) => {
+        
+            toast.success("Menu Saved Successfully !", {
+                position: toast.POSITION.TOP_CENTER
+            });
+        }
+          
+        )
+        .catch((err)=> {
+            toast.error(`Something Went Wrong ! ${err}`, {
+                position: toast.POSITION.TOP_Center
+              });
+        })
 
         setIsAdd(false)
       }
@@ -122,6 +135,7 @@ const FormAdd = ({setIsAdd}) => {
                 <button 
                 onClick={handleSimpan}
                 type='button'>Simpan</button>
+                
             </div>
         </div>
     )

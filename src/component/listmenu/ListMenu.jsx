@@ -4,13 +4,14 @@ import './listmenu.css'
 import MenuTable from '../menuTable/MenuTable';
 import FormAdd from '../formAdd/FormAdd';
 
+
 const ListMenu = () => {
    
     const [isAdd, setIsAdd] = useState(false)
    
 
     return (
-        <div className='mainContList'>
+        <div id='conFood' className='mainContList'>
             <div className='secondContList'>
                 {
                     !isAdd?
@@ -25,7 +26,7 @@ const ListMenu = () => {
                         <FormAdd setIsAdd={setIsAdd}/>
                         
                 }
- 
+                
             </div>
         </div>
     )
