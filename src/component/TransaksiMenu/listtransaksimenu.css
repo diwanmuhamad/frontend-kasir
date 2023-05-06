@@ -1,12 +1,15 @@
 .menuCon {
     width: 63%;
     /* border: 2px solid black; */
-    height: 100px;
+    height: 100%;
     padding-top: 35px;
     display: grid;
     /* height: 100%; */
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    /* grid-template-rows: 250px; */
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    /* border: 1px solid black; */
 }
 
 .cardMenuTrans {

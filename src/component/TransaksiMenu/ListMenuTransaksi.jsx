@@ -6,18 +6,18 @@ import {changeRupiah} from '../../utlis/priceRupiah'
 const ListMenuTransaksi = ({handleAddMenu}) => {
     const [listData, setListData] = useState([])
     useEffect(()=> {
-        axios.get('http://localhost:5001/api/foods', {
+        axios.get('https://sparkling-bat-toga.cyclic.app/api/foods', {
             headers: {
                 Accept: 'application/json',
               }
         }).then(res=> {
             setListData(res.data.data)
-            // if (res.data.data.length > 4) {
-            //     document.getElementById('conFood').style.height = '100%';
-            // }
-            // else {
-            //     document.getElementById('conFood').style.height = '100vh';
-            // }
+            if (res.data.data.length > 6) {
+                document.getElementById('transConFood').style.height = '100%';
+            }
+            else {
+                document.getElementById('transConFood').style.height = '100vh';
+            }
            
         }).catch(err=>console.log(err))
         

@@ -6,7 +6,7 @@ import {changeRupiah} from '../../utlis/priceRupiah'
 const MenuTable = ({setIsAdd}) => {
     const [listData, setListData] = useState([])
     useEffect(()=> {
-        axios.get('http://localhost:5001/api/foods', {
+        axios.get('https://sparkling-bat-toga.cyclic.app/api/foods', {
             headers: {
                 Accept: 'application/json',
               }

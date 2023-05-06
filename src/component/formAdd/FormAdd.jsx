@@ -71,14 +71,14 @@ const FormAdd = ({setIsAdd}) => {
 
       const handleSimpan = () => {
         // console.log(dataMenu)
-        axios.post('http://localhost:5001/api/foods/add',
+        axios.post('https://sparkling-bat-toga.cyclic.app/api/foods/add',
         dataMenu
         ,{
             headers: {
                 Accept: 'application/json',
               },
         }).then((res) => {
-        
+            setIsAdd(false)
             toast.success("Menu Saved Successfully !", {
                 position: toast.POSITION.TOP_CENTER
             });
@@ -91,7 +91,7 @@ const FormAdd = ({setIsAdd}) => {
               });
         })
 
-        setIsAdd(false)
+        
       }
     return (
         <div className='cardFoodCont'>

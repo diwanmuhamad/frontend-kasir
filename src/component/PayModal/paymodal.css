@@ -1,0 +1,138 @@
+.mainBackAll {
+    z-index: 1;
+    width: 100%;
+    height: 200%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.modalCon {
+    /* z-index: 2; */
+    width: 68%;
+    /* height: 300px; */
+    background-color: white;
+    margin: auto;
+    margin-top: 90px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+.modalSecCon {
+    width: 100%;
+    height: 100%;
+} 
+
+#tableModal {
+    width: 100%;
+    /* margin-top: 40px; */
+    border-collapse: collapse;
+    margin: 0;
+}
+
+
+#titleTableModal > th {
+    color: #666666;
+}
+
+td, th {
+    padding: 7px;
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+#titleTableModal {
+    background-color: #f0f0f0;
+}
+
+.contentModalCon {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+    /* border: 1px solid black; */
+}
+
+/* .grayLine {
+    height: 200px;
+    width: 3px;
+    border-left: 3px solid #e8e8e8;
+} */
+
+.payInputCon {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-left: 3px solid #e8e8e8;
+    padding-left: 30px;
+}
+
+.payInputCon > h4 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.paymentInput {
+    width: 100%;
+}
+
+.paymentInput > input {
+    width: 94%;
+    height: 40px;
+    border: 2px solid #e8e8e8;
+    border-radius: 3px; 
+    padding-left: 10px;
+}
+
+.priceText {
+    width: 100%;
+}
+
+.priceText > h4 {
+    margin: 0;
+    color: #da6969;
+}
+
+.btnDuoConModal {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+
+#closeBtn {
+    color: #999696;
+    background-color: white;
+    border: 2px solid #e8e8e8;
+    cursor: pointer;
+    padding: 7px 14px;
+    border-radius: 3px;
+    width: 48%;
+    height: 40px;
+    /* box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2) */
+}
+
+#payBtn {
+    color: white;
+    background-color: #00acee;
+    border: none;
+    cursor: pointer;
+    padding: 7px 14px;
+    border-radius: 3px;
+    width: 48%;
+    height: 40px;
+    /* box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2) */
+}
+
+
+
+
+

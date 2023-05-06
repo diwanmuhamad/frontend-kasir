@@ -5,11 +5,12 @@ import {useState, useEffect} from 'react'
 import { changeRupiah } from '../../utlis/priceRupiah'
 import { toast} from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import PayModal from '../PayModal/PayModal'
 
 const Transaksi = () => {
     const [buyData, setBuyData] = useState([])
     const [totalPrice, setTotalPrice] = useState("")
-
+    const [isPayOpen, setIsPayOpen] = useState(false)
     const handleClearCart = () => {
         setBuyData([])
         setTotalPrice("")
@@ -65,7 +66,7 @@ const Transaksi = () => {
         }
     }, [])
     return (
-        <div className='mainTransCon'>
+        <div className='mainTransCon' id='transConFood'>
             <div className='secTransCon'>
                 <ListMenuTransaksi handleAddMenu={handleAddMenu}/>
                 <div className='payMainCon'>
@@ -101,12 +102,17 @@ const Transaksi = () => {
                                     onClick={handlePrint}
                                 type="button">Print Bill</button>
                             </div>
-                            <button id='chargeBtn' type="button">Charge {changeRupiah(totalPrice)}</button>
+                            <button 
+                            onClick={()=>setIsPayOpen(true)}
+                            id='chargeBtn' type="button">Charge {changeRupiah(totalPrice)}</button>
                         </div>
                     </div>
                 </div>
 
             </div>
+            {
+                isPayOpen && <PayModal buyData={buyData} totalPrice={totalPrice} setIsPayOpen={setIsPayOpen}/>
+            }
         </div>
     )
 }
